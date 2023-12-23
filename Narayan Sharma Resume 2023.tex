@@ -128,7 +128,7 @@
     {Bachelor of Science in Data Science \textbf{(GPA: 3.8)}}{Aug. 2021 -- May 2025}
     
     \resumeSubSubheadingLeft% added <<<<<<<<<<<<<<<
-    {Relevant Coursework}{Object-Oriented Design, Algorithms \& Data Structures, Fundamentals of Computer Science 2, Discrete Structures, Foundations of Data Science, Database Design, Large Scale Information Retrieval, Information Data Visualization, Linear Algebra, Probability \& Statistics}
+    {Relevant Coursework}{Object-Oriented Design, Algorithms \& Data Structures, Discrete Structures, Foundations of Data Science, Database Design, Large Scale Information Retrieval, Information Data Visualization, Linear Algebra, Probability \& Statistics, Natural Language Processing, Web Development}
     
 \resumeSubHeadingListEnd
 
@@ -136,10 +136,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, GoLang, Racket, GraphQL, JavaScript, TypeScript, Smithy} \\
-     \textbf{Databases}{: MySQL, Redis, MongoDB, Neo4j, AWS DynamoDB, Athena, Redshift, S3} \\
-     \textbf{Frameworks/Libraries}{: Flask, JUnit, Gin, gqlgen, REST, Java Spring Boot, React} \\
-     \textbf{Developer Tools}{: Git, Docker, Jupyter, MySQL Workbench, VS Code, PyCharm, IntelliJ, Eclipse, Tableau, Bones} \\
+     \textbf{Languages}{: Java, Python, GoLang, Racket, GraphQL, TypeScript, Smithy} \\
+     \textbf{Databases}{: MySQL, Redis, MongoDB, Neo4j, AWS DynamoDB} \\
+     \textbf{Frameworks/Libraries}{: Flask, JUnit, Gin, gqlgen, REST, AWS, OpenCV} \\
     }}
  \end{itemize}
 
@@ -149,17 +148,17 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Software Development Engineer Co-op}{August 2023 -- December 2023}
+      {Software Development Engineer Co-op}{Aug. 2023 -- Dec. 2023}
       {Amazon Robotics}{Boston, MA}
       \resumeItemListStart
-      \resumeItem{Developed problem finders, an internal software that helps workers on the manufacturing floor to detect problems, using Java and Typescript, employing AWS Lambda functions and DynamoDB to meticulously process and categorize over 50,000 data points per day, leading to a reduction in issue resolution time for drive units and robots}
-      \resumeItem{Contributed to the migration efforts of critical legacy code to modern AWS services, including Athena DB and custom data lakes, resulting in an increased performance boost, and a large reduction in maintenance overhead}
-      \resumeItem{Architected and executed comprehensive unit and integration test suites with JUnit, ensuring a 98\% test coverage, and facilitating the smooth integration of problem finders into the CI/CD pipeline}
-      \resumeItem{Enhanced a global web application using Typescript to facilitate the centralized management and registration of problem finders, enabling users worldwide to easily create and customize schedules for problem detection, optimizing operational efficiency}
+      \resumeItem{Accomplished migration of 6 problem finders from legacy services to a centralized system utilizing AWS Lambda, DynamoDB, and Athena, enhancing global monitoring across fulfillment centers}
+      \resumeItem{Implemented DynamoDB-based scheduling for AWS SNS topics, ensuring scalable distribution and dynamic problem finder scaling for timely information to subscribers}
+      \resumeItem{Developed a PATCH endpoint via API Gateway, facilitating the addition of update functionality to internal service's notifications}
+      \resumeItem{Orchestrated a State Machine with AWS Step Functions and Lambdas to handle diverse notification types and internal service dependencies, ensuring subscribers receive up-to-date information through dynamically updated notifications}
       \resumeItemListEnd
 
      \resumeSubheading
-      {Software Engineer Intern}{June 2023 -- August 2023}
+      {Software Engineer Intern}{June 2023 -- Aug. 2023}
       {MyDataProduct}{Remote}
       \resumeItemListStart
         \resumeItem{Responsible for testing and optimizing mobile platform applications and maintaining development operations through automated shell scripts in the pipeline, while collaborating with cross-functional teams throughout the development Agile lifecycle}
@@ -167,7 +166,7 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Full Stack Software Engineer}{January 2023 -- May 2023}
+      {Full Stack Software Engineer}{Jan. 2023 -- May 2023}
       {Generate (ReMo)}{Boston, MA}
       \resumeItemListStart
         \resumeItem{Full Stack Software Engineer for ReMo, a data-management startup that empowers students and teachers to set goals towards reading independence}
@@ -175,14 +174,14 @@
         \resumeItem{Leveraging GoLang and GraphQL to re-architect ReMo’s backend in order to create resolvers that are implemented as endpoints through the use of the Gin Server}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Director Of Digital Innovation}{September 2023 -- Present}
-      {Student Government Association (SGA)}{Boston, MA}
-      \resumeItemListStart
-        \resumeItem{Spearheading the development of a diverse portfolio of custom-coded tools and websites, leveraging expertise in Python, SQL, TypeScript, and JavaScript to drive digital innovation within SGA}
-        \resumeItem{Driving the creation of cutting-edge, automated solutions that optimize operational processes and streamline efficiency, employing advanced OOD principles and architectural patterns}
-        \resumeItem{Providing visionary leadership to a team of talented developers, guiding and inspiring them to achieve outstanding outcomes and maximize their potential}
-      \resumeItemListEnd
+    % \resumeSubheading
+    %   {Director Of Digital Innovation}{September 2023 -- Present}
+    %   {Student Government Association (SGA)}{Boston, MA}
+    %   \resumeItemListStart
+    %     \resumeItem{Spearheading the development of a diverse portfolio of custom-coded tools and websites, leveraging expertise in Python, SQL, TypeScript, and JavaScript to drive digital innovation within SGA}
+    %     \resumeItem{Driving the creation of cutting-edge, automated solutions that optimize operational processes and streamline efficiency, employing advanced OOD principles and architectural patterns}
+    %     \resumeItem{Providing visionary leadership to a team of talented developers, guiding and inspiring them to achieve outstanding outcomes and maximize their potential}
+    %   \resumeItemListEnd
 
     \resumeSubheading
       {Undergraduate Teaching Assistant}{Sep. 2022 -- June 2023}
@@ -227,8 +226,16 @@
 
 
 %-----------PROJECTS-----------
-% \section{Projects}
-% \resumeSubHeadingListStart
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{RoboUmp} $|$ \emph{Python}}{Sep. 2023 -- Dec. 2023}
+\resumeItemListStart
+\resumeItem{Developed a robotic umpire, RoboUmp, a robot designed to detect balls and strikes within a baseball game}
+\resumeItem{Led the software architecture design for RoboUmp, implementing an MVC pattern and extensively utilizing OpenCV libraries, including Tensorflow, Pytorch, and Mediapipe, in the model for pitcher detection, ball tracking, and strike zone creation}
+\resumeItem{Engineered a robust communication system between the model and controller using UDP and TCP sockets, enabling seamless frame streaming for real-time analysis, ensuring accurate ball and strike detection through effective algorithm execution}
+\resumeItemListEnd
 
 % \resumeProjectHeading
 % {\textbf{World Cup Application} $|$ \emph{Python, MySQL, Flask, HTML, CSS, JavaScript, Docker, Git}}{Oct. 2022 -- Dec. 2022}
@@ -238,11 +245,11 @@
 % \resumeItem{Created RESTful API architecture with Flask for user interface and foreign keys for data integrity in the database}
 % \resumeItemListEnd
 
-% \resumeProjectHeading
-% {\textbf{Spotify Recommendation Engine} $|$ \emph{Python, Neo4j, Git}}{Mar. 2023 -- Present}
-% \resumeItemListStart
-% \resumeItem{Developed a song recommendation system using Neo4j and a custom similarity metric based on pre-computed Euclidean distances between 1000 songs, resulting in a recommendation system capable of generating any number of song recommendations based on any input song}
-% \resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Spotify Recommendation Engine} $|$ \emph{Python, Neo4j}}{March 2023 -- May 2023}
+\resumeItemListStart
+\resumeItem{Developed a song recommendation system using Neo4j and a custom similarity metric based on pre-computed Euclidean distances between 1000 songs, resulting in a recommendation system capable of generating any number of song recommendations based on any input song}
+\resumeItemListEnd
 
 
 
@@ -252,7 +259,7 @@
 % \resumeItem{Used statistical analysis and machine learning algorithms to identify the most consistent quarterback of all time and predict quarterback retirement}
 % \resumeItem{Developed a flexible model to assess consistency using Pandas to organize quarterback performance data by season, record, elo rating, and team}
 % \resumeItemListEnd
-% \resumeSubHeadingListEnd
+ \resumeSubHeadingListEnd
 
 
 
